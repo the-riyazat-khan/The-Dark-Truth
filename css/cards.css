@@ -1,0 +1,257 @@
+/* SECTION TITLE */
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 25px;
+    color: var(--secondary);
+    border-left: 5px solid var(--primary);
+    padding-left: 12px;
+}
+
+/* SECTIONS */
+
+.top-stories,
+.editors-pick,
+.latest-news {
+    padding: 50px 0;
+}
+
+.category-section {
+    padding: 10px 0;
+}
+
+/* NEWS GRIDS */
+
+#top-stories-container,
+#india-news,
+#world-news,
+#sports-news,
+#health-news,
+#education-news,
+#entertainment-news,
+#food-news,
+#technology-news,
+#editors-pick-container,
+#latest-news-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* NEWS CARD */
+
+.news-card {
+    background: var(--light);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* CARD CONTENT */
+
+.news-content {
+    padding: 15px;
+}
+
+.news-category {
+    display: inline-block;
+    color: var(--primary);
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.news-content h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.news-content p {
+    color: var(--gray);
+    font-size: .9rem;
+    line-height: 1.6;
+}
+
+/* ADVERTISEMENT */
+
+.ad-section {
+    padding: 30px 0;
+}
+
+.ad-placeholder {
+    background: #ececec;
+    border: 1px dashed #bbb;
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+/* Search Box */
+.search-page-box {
+    margin-bottom: 25px;
+    width: 250px;
+    display: none
+}
+
+.search-page-box input {
+
+    width: 100%;
+    padding: 14px 18px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    font-size: 16px;
+    outline: none;
+
+}
+
+.search-page-box input:focus {
+    border-color: #7a1f1f;
+}
+
+@media (max-width:768px) {
+
+    .search-page-box {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+}
+
+/* Category-section */
+#category-news-grid {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+
+}
+
+#trending-news-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+#search-results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+@media(max-width:992px) {
+    #search-results {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Category Section Mobile Responsiveness */
+@media (max-width:992px) {
+
+    #category-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #trending-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width:576px) {
+
+    #category-news-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    #top-stories-container,
+    #india-news,
+    #world-news,
+    #sports-news,
+    #health-news,
+    #education-news,
+    #entertainment-news,
+    #food-news,
+    #technology-news,
+    #editors-pick-container,
+    #latest-news-container {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    #top-stories-container,
+    #india-news,
+    #world-news,
+    #sports-news,
+    #health-news,
+    #education-news,
+    #entertainment-news,
+    #food-news,
+    #technology-news,
+    #editors-pick-container,
+    #latest-news-container {
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+
+    }
+
+    .news-card {
+        box-shadow: none;
+        border: none;
+        background: transparent;
+    }
+
+    .news-card img {
+        height: 120px;
+    }
+
+    .news-content {
+        padding: 8px 0;
+    }
+
+    .news-content h3 {
+        font-size: 1rem;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+
+    .news-content p {
+        display: none;
+    }
+
+    .news-category {
+        display: none;
+    }
+
+    #trending-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

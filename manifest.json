@@ -1,0 +1,22 @@
+{
+    "name": "The Dark Truth",
+    "short_name": "Dark Truth",
+    "description": "Latest Hindi News from India, World, Sports, Health, Education, Entertainment, Food and Technology.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#f8fafc",
+    "theme_color": "#7a1f1f",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icons/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

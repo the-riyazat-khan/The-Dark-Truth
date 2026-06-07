@@ -1,0 +1,149 @@
+/* PAGE LAYOUT */
+
+.page-content {
+
+    padding: 60px 0;
+
+}
+
+.privacy-container {
+
+    max-width: 900px;
+    margin: auto;
+
+}
+
+/* PAGE TITLE */
+
+.section-title {
+
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+
+}
+
+.policy-date {
+
+    color: var(--gray);
+    font-size: .95rem;
+
+    margin-bottom: 50px;
+
+    border-bottom: 1px solid var(--border);
+
+    padding-bottom: 20px;
+
+}
+
+/* SECTIONS */
+
+.policy-section {
+
+    margin-bottom: 45px;
+
+}
+
+.policy-section h2 {
+
+    font-size: 1.7rem;
+
+    color: var(--secondary);
+
+    margin-bottom: 18px;
+
+    position: relative;
+
+    padding-left: 18px;
+
+}
+
+.policy-section h2::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 4px;
+
+    width: 4px;
+    height: 28px;
+
+    background: var(--primary);
+
+}
+
+.policy-section p {
+
+    color: var(--gray);
+
+    font-size: 1.05rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 15px;
+
+}
+
+.policy-section ul {
+
+    padding-left: 25px;
+
+}
+
+.policy-section li {
+
+    color: var(--gray);
+
+    margin-bottom: 12px;
+
+    line-height: 1.8;
+
+}
+
+/* LINKS */
+
+.policy-section a {
+
+    color: var(--primary);
+
+    font-weight: 600;
+
+}
+
+.policy-section a:hover {
+
+    text-decoration: underline;
+
+}
+
+/* MOBILE */
+
+@media (max-width:768px) {
+
+    .page-content {
+
+        padding: 40px 0;
+
+    }
+
+    .section-title {
+
+        font-size: 2rem;
+
+    }
+
+    .policy-section h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .policy-section p,
+    .policy-section li {
+
+        font-size: 1rem;
+
+    }
+
+}

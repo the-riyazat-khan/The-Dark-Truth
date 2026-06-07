@@ -1,0 +1,200 @@
+/* HEADER */
+.header {
+    background: var(--light);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 75px;
+}
+
+/* LOGO */
+
+.logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary);
+    white-space: nowrap;
+}
+
+/* NAVBAR */
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    font-size: .95rem;
+    font-weight: 500;
+    color: var(--secondary);
+    transition: var(--transition);
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--primary);
+}
+
+/* SEARCH BOX */
+
+.search-box {
+    width: 220px;
+
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    outline: none;
+    font-size: .9rem;
+
+}
+
+.search-box input:focus {
+    border-color: var(--primary);
+}
+
+/* HAMBURGER */
+
+.hamburger {
+
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--secondary);
+
+}
+
+/* Mobile App Install Button Default */
+#install-btn {
+    display: none;
+}
+
+/* Mobile Only */
+@media (max-width:768px) {
+
+    #install-btn {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px 16px;
+
+        background: #7a1f1f;
+        color: #fff;
+
+        border: none;
+        border-radius: 8px;
+
+        font-size: 14px;
+        font-weight: 600;
+
+        cursor: pointer;
+    }
+
+}
+
+/* MOBILE HEADER */
+
+@media (max-width: 992px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+
+        position: absolute;
+        top: 75px;
+        right: 10px;
+        left: auto;
+
+        width: 260px;
+
+        background: var(--light);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+
+        box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+
+        display: none;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar.active {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .navbar li {
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px 20px;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .search-box {
+        display: none;
+    }
+
+}
+
+
+.breaking-news {
+    background: #7a1f1f;
+    color: #fff;
+    overflow: hidden;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#ticker-container {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.ticker {
+    display: inline-block;
+    padding-left: 100%;
+    animation: ticker 40s linear infinite;
+    font-weight: 600;
+}
+
+@keyframes ticker {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+}

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<meta http-equiv="content-language" content="hi">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        The Dark Truth - Latest Hindi News, India News, World News & Technology Updates
+    </title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <meta name="theme-color" content="#7a1f1f">
+
+    <meta name="description"
+        content="Read latest Hindi News from India, World, Sports, Health, Education, Entertainment, Food and Technology on The Dark Truth.">
+
+    <meta name="keywords"
+        content="Hindi News, Latest Hindi News, India News, World News, Sports News, Technology News, Breaking News, The Dark Truth">
+
+    <meta name="robots" content="index, follow">
+
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="The Dark Truth | Latest Hindi News">
+    <meta property="og:description"
+        content="Latest Hindi News from India, World, Sports, Health, Education and Technology.">
+    <meta property="og:url" content="https://www.thedarktruth.com">
+    <meta property="og:image" content="https://www.thedarktruth.com/icons/icon-512.png">
+    <meta property="og:site_name" content="The Dark Truth">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="The Dark Truth | Latest Hindi News">
+    <meta name="twitter:description" content="Latest Hindi News from India, World, Sports and Technology.">
+    <meta name="twitter:image" content="https://www.thedarktruth.com/icons/icon-512.png">
+    <meta name="author" content="The Dark Truth">
+    <link rel="canonical" href="https://www.thedarktruth.com/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/icon-192.png">
+    <link rel="apple-touch-icon" href="icons/icon-192.png">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    The Dark Truth
+                </a>
+            </div>
+
+            <button id="install-btn" hidden>
+                Install App
+            </button>
+
+            <button class="hamburger" id="hamburger">
+                ☰
+            </button>
+            <nav class="navbar" id="navbar">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="india.html">India</a></li>
+                    <li><a href="world.html">World</a></li>
+                    <li><a href="sport.html">Sport</a></li>
+                    <li><a href="health.html">Health</a></li>
+                    <li><a href="education.html">Education</a></li>
+                    <li><a href="entertainment.html">Entertainment</a></li>
+                    <li><a href="food.html">Food</a></li>
+                    <li><a href="technology.html">Technology</a></li>
+                </ul>
+            </nav>
+            <form class="search-box" onsubmit="return false">
+                <input type="text" id="search-input" placeholder="Search In Hindi...">
+            </form>
+        </div>
+    </header>
+
+    <!-- BREAKING NEWS -->
+
+    <section class="breaking-news">
+        <div class="container">
+            <div id="ticker-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- HERO SECTION -->
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div id="hero-main">
+                </div>
+                <div id="hero-side" class="hero-side">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOP STORIES -->
+
+    <section class="top-stories">
+        <div class="container">
+            <h2 class="section-title">
+                Top Stories
+            </h2>
+            <div id="top-stories-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-placeholder">
+                Advertisement
+            </div>
+        </div>
+    </section>
+
+    <!-- INDIA NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                India
+            </h2>
+            <div id="india-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- WORLD NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                World
+            </h2>
+            <div id="world-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-placeholder">
+                Advertisement
+            </div>
+        </div>
+    </section>
+
+    <!-- SPORTS NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                Sports
+            </h2>
+            <div id="sports-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- HEALTH NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                Health
+            </h2>
+            <div id="health-news">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EDUCATION NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                Education
+            </h2>
+            <div id="education-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVERTISEMENT -->
+
+    <section class="ad-section">
+        <div class="container">
+            <div class="ad-placeholder">
+                Advertisement
+            </div>
+        </div>
+    </section>
+
+    <!-- ENTERTAINMENT NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                Entertainment
+            </h2>
+            <div id="entertainment-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                Food
+            </h2>
+            <div id="food-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY NEWS -->
+
+    <section class="category-section">
+        <div class="container">
+            <h2 class="section-title">
+                Technology
+            </h2>
+            <div id="technology-news">
+            </div>
+        </div>
+    </section>
+
+    <!-- EDITOR'S PICK -->
+
+    <section class="editors-pick">
+        <div class="container">
+            <h2 class="section-title">
+                Editor's Pick
+            </h2>
+            <div id="editors-pick-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- LATEST NEWS -->
+
+    <section class="latest-news">
+        <div class="container">
+            <h2 class="section-title">
+                Latest News
+            </h2>
+            <div id="latest-news-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- PAGINATION -->
+
+    <section class="pagination-section">
+        <div class="container">
+            <div id="pagination-container">
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column">
+                <h3>
+                    The Dark Truth
+                </h3>
+                <p>
+                    Latest Hindi News from India, World,
+                    Sports, Health, Education,
+                    Entertainment, Food and Technology.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4>
+                    Categories
+                </h4>
+                <a href="india.html">India</a>
+                <a href="world.html">World</a>
+                <a href="sport.html">Sport</a>
+                <a href="health.html">Health</a>
+                <a href="education.html">Education</a>
+                <a href="entertainment.html">Entertainment</a>
+                <a href="food.html">Food</a>
+                <a href="technology.html">Technology</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>
+                    Quick Links
+                </h4>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="disclaimer.html">Disclaimer</a>
+            </div>
+        </div>
+
+        <div style="
+            text-align:center;
+            padding:25px 15px;
+            margin-top:30px;
+            border-top:1px solid rgba(255,255,255,.08);
+            font-size:16px;
+            color:#94a3b8;
+            letter-spacing:.5px;
+        ">
+            © 2026 The Dark Truth. All Rights Reserved. |
+            Developed By <strong style="color:#ffffff;">Riyazat Khan Shaukat Khan</strong>
+        </div>
+    </footer>
+
+    <!-- Mobile Navigation -->
+    <nav class="bottom-nav">
+
+        <a href="index.html" class="active">
+            <i class="fa-solid fa-house"></i>
+            <small>Home</small>
+        </a>
+
+        <a href="india.html">
+            <i class="fa-solid fa-landmark-flag"></i>
+            <small>India</small>
+        </a>
+
+        <a href="world.html">
+            <i class="fa-solid fa-earth-asia"></i>
+            <small>World</small>
+        </a>
+
+        <a href="trending.html">
+            <i class="fa-solid fa-fire"></i>
+            <small>Trending</small>
+        </a>
+
+        <a href="search.html">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <small>Search</small>
+        </a>
+
+    </nav>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/app.js"></script>
+    <script src="js/ticker.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/install.js"></script>
+    <script>
+
+        if ("serviceWorker" in navigator) {
+
+            window.addEventListener(
+                "load",
+                () => {
+
+                    navigator.serviceWorker
+                        .register("sw.js")
+
+                        .then(() => {
+
+                            console.log(
+                                "Service Worker Registered"
+                            );
+
+                        })
+
+                        .catch(error => {
+
+                            console.log(error);
+
+                        });
+
+                }
+            );
+
+        }
+
+    </script>
+
+    <script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+
+ "name":"The Dark Truth",
+
+ "url":"https://www.thedarktruth.com",
+
+ "logo":"https://www.thedarktruth.com/icons/icon-512.png",
+
+ "founder":{
+   "@type":"Person",
+   "name":"Riyazat Khan Shaukat Khan"
+ }
+}
+
+</script>
+
+    <script type="application/ld+json">
+
+{
+ "@context":"https://schema.org",
+
+ "@type":"WebSite",
+
+ "name":"The Dark Truth",
+
+ "url":"https://www.thedarktruth.com",
+
+ "potentialAction":{
+   "@type":"SearchAction",
+
+   "target":
+   "https://www.thedarktruth.com/search.html?q={search_term_string}",
+
+   "query-input":
+   "required name=search_term_string"
+ }
+}
+
+</script>
+
+    <script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"NewsMediaOrganization",
+
+  "name":"The Dark Truth",
+
+  "url":"https://www.thedarktruth.com",
+
+  "logo":{
+    "@type":"ImageObject",
+    "url":"https://www.thedarktruth.com/icons/icon-512.png"
+  }
+}
+</script>
+</body>
+
+</html>
